@@ -1,0 +1,4 @@
+---
+fixtures:
+  symlinks:
+    mozilla: "#{source_dir}"
