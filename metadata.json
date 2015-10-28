@@ -1,0 +1,37 @@
+{
+  "name":    "simp-mozilla",
+  "version": "4.1.0",
+  "author":  "Simp",
+  "summary": "Safely manages mozilla",
+  "license": "Apache-2.0",
+  "source":  "https://github.com/simp/pupmod-simp-mozilla",
+  "project_page": "https://github.com/simp/pupmod-simp-mozilla",
+  "issues_url":   "https://simp-project.atlassian.net",
+  "tags": [ "simp","mozilla" ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.1.0"
+    },
+    {
+      "name": "simp-common",
+      "version_requirement": ">= 4.1.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
