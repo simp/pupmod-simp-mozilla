@@ -16,6 +16,161 @@
       "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab29df4_c834ade0",
+        "filename": "metadata.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1005143
+      },
+      "writtenOn": "2015-10-30T06:08:16Z",
+      "side": 1,
+      "message": "replace this with \"simp-mozilla\"",
+      "range": {
+        "startLine": 2,
+        "startChar": 14,
+        "endLine": 2,
+        "endChar": 46
+      },
+      "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab29df4_e83171ed",
+        "filename": "metadata.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1005143
+      },
+      "writtenOn": "2015-10-30T06:08:16Z",
+      "side": 1,
+      "message": "+1",
+      "range": {
+        "startLine": 10,
+        "startChar": 20,
+        "endLine": 10,
+        "endChar": 27
+      },
+      "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab29df4_084ea56f",
+        "filename": "spec/acceptance/nodesets/fedora-20-x64.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1005143
+      },
+      "writtenOn": "2015-10-30T06:08:16Z",
+      "side": 1,
+      "message": "We can get rid of the fedora nodeset (I should remove it from the module skeleton)",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 12
+      },
+      "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab29df4_685d6121",
+        "filename": "spec/classes/firefox_spec.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1005143
+      },
+      "writtenOn": "2015-10-30T06:08:16Z",
+      "side": 1,
+      "message": "+1",
+      "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab29df4_28536918",
+        "filename": "spec/classes/firefox_spec.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1005143
+      },
+      "writtenOn": "2015-10-30T06:08:16Z",
+      "side": 1,
+      "message": "yay!",
+      "range": {
+        "startLine": 9,
+        "startChar": 9,
+        "endLine": 9,
+        "endChar": 20
+      },
+      "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab29df4_48589d32",
+        "filename": "spec/classes/firefox_spec.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1005143
+      },
+      "writtenOn": "2015-10-30T06:08:16Z",
+      "side": 1,
+      "message": "aww...",
+      "range": {
+        "startLine": 13,
+        "startChar": 13,
+        "endLine": 13,
+        "endChar": 19
+      },
+      "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ab29df4_a83e99b6",
+        "filename": "spec/classes/thunderbird_spec.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1005143
+      },
+      "writtenOn": "2015-10-30T06:08:16Z",
+      "side": 1,
+      "message": "This fact should go away now you\u0027ve modernized the test structure (this won\u0027t always be the case when you modernize, but it often is).  The `facts` variable provided by `on_supported_os` provide many facts recorded from each OS in metadata.json, including :hardwaremodel.",
+      "range": {
+        "startLine": 6,
+        "startChar": 5,
+        "endLine": 6,
+        "endChar": 50
+      },
+      "revId": "7e0a1b831e999f6cc53545029d4a98ab824d17e8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
