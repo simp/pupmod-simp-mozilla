@@ -1,7 +1,7 @@
 {
   "name":    "simp-mozilla",
   "version": "4.1.0",
-  "author":  "Simp",
+  "author":  "SIMP Team",
   "summary": "Safely manages mozilla",
   "license": "Apache-2.0",
   "source":  "https://github.com/simp/pupmod-simp-mozilla",

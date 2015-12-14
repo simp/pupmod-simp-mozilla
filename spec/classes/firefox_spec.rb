@@ -13,7 +13,7 @@ describe 'mozilla::firefox' do
     it { is_expected.to create_class('mozilla::firefox') }
 
       context 'base' do
-        it { should contain_package('firefox.x86_64').with(:ensure =>'latest') }
+        it { is_expected.to contain_package('firefox.x86_64').with(:ensure =>'latest') }
       end
     end
    end
