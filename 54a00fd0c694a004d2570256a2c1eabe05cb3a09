@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac4a560_de46fe20",
+        "filename": "metadata.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1004834
+      },
+      "writtenOn": "2015-12-14T13:43:56Z",
+      "side": 1,
+      "message": "This should be \u0027SIMP Team\u0027",
+      "revId": "54a00fd0c694a004d2570256a2c1eabe05cb3a09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_9e456619",
+        "filename": "spec/classes/firefox_spec.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1004834
+      },
+      "writtenOn": "2015-12-14T13:43:56Z",
+      "side": 1,
+      "message": "We should not be mixing \u0027is_expected\u0027 and \u0027should\u0027 syntaxes.",
+      "revId": "54a00fd0c694a004d2570256a2c1eabe05cb3a09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
