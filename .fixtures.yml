@@ -1,5 +1,5 @@
 ---
 fixtures:
-  repositories:
+#  repositories: []
   symlinks:
     mozilla: "#{source_dir}"
