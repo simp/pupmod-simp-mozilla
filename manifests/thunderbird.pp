@@ -8,7 +8,7 @@
 #
 class mozilla::thunderbird {
 
-  package { "thunderbird.$::hardwaremodel":
+  package { "thunderbird.${::hardwaremodel}":
     ensure => 'latest'
   }
 }
