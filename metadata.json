@@ -1,6 +1,6 @@
 {
   "name":    "simp-mozilla",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "author":  "simp",
   "summary": "Manage Mozilla products (currently supported: firefox)",
   "license": "Apache-2.0",
