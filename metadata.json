@@ -1,14 +1,22 @@
 {
   "name":    "simp-mozilla",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "author":  "simp",
   "summary": "Manage Mozilla products (currently supported: firefox)",
   "license": "Apache-2.0",
   "source":  "https://github.com/simp/pupmod-simp-mozilla",
   "project_page": "https://github.com/simp/pupmod-simp-mozilla",
   "issues_url":   "https://simp-project.atlassian.net",
-  "tags": [ "simp", "mozilla", "firefox" ],
+  "tags": [ "simp", "mozilla", "firefox", "thunderbird" ],
   "dependencies": [
+    {
+      "name": "simp/simplib",
+      "version_requirement": ">= 1.2.5"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.9.0"
+    }
   ],
   "operatingsystem_support": [
     {
