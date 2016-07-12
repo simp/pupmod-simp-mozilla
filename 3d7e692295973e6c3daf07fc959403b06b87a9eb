@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_ba5cde19",
+        "filename": "Gemfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1004834
+      },
+      "writtenOn": "2016-07-12T17:00:37Z",
+      "side": 1,
+      "message": "This needs to go away",
+      "revId": "3d7e692295973e6c3daf07fc959403b06b87a9eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
