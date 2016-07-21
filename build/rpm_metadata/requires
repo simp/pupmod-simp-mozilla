@@ -1,6 +1,2 @@
 # Drop all Requires, Obsoletes, and Provides statements in here
-
-Requires: pupmod-simplib >= 1.2.5-0
-Requires: puppetlabs-stdlib >= 4.9.0-0.SIMP
-Requires: simp-bootstrap >= 4.2.0
-Obsoletes: pupmod-mozilla-test
+Obsoletes: pupmod-mozilla-test >= 0.0.1
