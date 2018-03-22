@@ -7,6 +7,7 @@
 # * Trevor Vaughan <tvaughan@onyxpoint.com>
 #
 class mozilla::thunderbird {
+  include 'mozilla'
 
   package { "thunderbird.${::hardwaremodel}":
     ensure => 'latest'

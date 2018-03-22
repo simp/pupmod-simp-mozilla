@@ -1,9 +1,7 @@
 # == Class: mozilla
 #
-# Stub
-#
 # == Authors
 #
-# * Trevor Vaughan <tvaughan@onyxpoint.com>
-#
-class mozilla {}
+class mozilla {
+  simplib::assert_metadata($module_name)
+}
