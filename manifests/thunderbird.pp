@@ -1,15 +1,15 @@
-# == Class: mozilla::thunderbird
+# Install mozilla thunderbird
 #
-# Install mozilla thunderbird for the correct architecture.
+# @param package_ensure The ensure status of the thunderbird package
 #
-# == Authors
+# @author https://github.com/simp/pupmod-simp-mozilla/graphs/contributors
 #
-# * Trevor Vaughan <tvaughan@onyxpoint.com>
-#
-class mozilla::thunderbird {
+class mozilla::thunderbird (
+  String $package_ensure = simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' }),
+) {
   include 'mozilla'
 
-  package { "thunderbird.${::hardwaremodel}":
-    ensure => 'latest'
+  package { 'thunderbird':
+    ensure => $package_ensure
   }
 }

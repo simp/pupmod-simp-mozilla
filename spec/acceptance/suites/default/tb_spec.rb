@@ -8,7 +8,7 @@ describe 'mozilla::thunderbird' do
     include 'mozilla::thunderbird'
     EOS
   }
-  
+
   context 'with defaults' do
     it 'should work with no errors' do
       apply_manifest(manifest, :catch_failures => true)
@@ -18,7 +18,7 @@ describe 'mozilla::thunderbird' do
       apply_manifest(manifest, :catch_changes => true)
     end
 
-    describe package('thunderbird.x86_64') do
+    describe package('thunderbird') do
       it { is_expected.to be_installed }
     end
   end
