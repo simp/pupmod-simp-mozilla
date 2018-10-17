@@ -18,7 +18,7 @@ describe 'mozilla::firefox' do
       apply_manifest(manifest, :catch_changes => true)
     end
 
-    describe package('firefox.x86_64') do
+    describe package('firefox') do
       it { is_expected.to be_installed }
     end
   end

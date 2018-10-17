@@ -1,15 +1,15 @@
-# == Class: mozilla::firefox
+# A class to install mozilla firefox
 #
-# A class to install mozilla firefox for the appropriate architecture.
+# @param package_ensure The ensure status of the firefox package
 #
-# == Authors
+# @author https://github.com/simp/pupmod-simp-mozilla/graphs/contributors
 #
-# * Trevor Vaughan <tvaughan@onyxpoint.com>
-#
-class mozilla::firefox {
+class mozilla::firefox (
+  String $package_ensure = simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' }),
+) {
   include 'mozilla'
 
-  package { "firefox.${::hardwaremodel}":
-    ensure => 'latest'
+  package { 'firefox':
+    ensure => $package_ensure
   }
 }
