@@ -1,8 +1,8 @@
 * Fri Oct 12 2018 Nick Miller <nick.miller@onyxpoint.com> - 5.1.0-0
-- Added $package_ensure parameter to mozilla::firefox and mozilla::thunderbird
+- Added $package_ensure parameters to mozilla::firefox and mozilla::thunderbird
   - Changed the package from 'latest' to 'installed'
-  - It will also respect `simp_options::package_ensure`
-  - Removed architecture from package resource
+  - Each package ensure parameter will also respect `simp_options::package_ensure`
+  - Removed the architecture qualifier from the name of each package resource
 
 * Fri Mar 23 2018 Trevor Vaughan <tvaughan@onyxpoint.com> - 5.1.0-0
 - Add support for Puppet 5 and OEL
