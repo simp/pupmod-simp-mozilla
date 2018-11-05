@@ -19,11 +19,13 @@
 This module provides classes to install Mozilla Firefox and Mozilla Thunderbird.
 
 ## This is a SIMP module
-This module is a component of the [System Integrity Management Platform](https://github.com/NationalSecurityAgency/SIMP), a compliance-management framework built on Puppet.
+
+This module is a component of the [System Integrity Management Platform](https://simp-project.com),
+a compliance-management framework built on Puppet.
 
 If you find any issues, they can be submitted to our [JIRA](https://simp-project.atlassian.net/).
 
-Please read our [Contribution Guide](https://simp-project.atlassian.net/wiki/display/SD/Contributing+to+SIMP) and visit our [developer wiki](https://simp-project.atlassian.net/wiki/display/SD/SIMP+Development+Home).
+Please read our [Contribution Guide](http://simp-doc.readthedocs.io/en/stable/contributors_guide/index.html).
 
 This module is optimally designed for use within a larger SIMP ecosystem, but it can be used independently:
 * When included within the SIMP ecosystem, security compliance settings will be managed from the Puppet server.
@@ -56,8 +58,7 @@ include 'mozilla::thunderbird'
 
 ## Development
 
-Please see the [SIMP Contribution Guidelines](https://simp-project.atlassian.net/wiki/display/SD/Contributing+to+SIMP).
-
+Please read our [Contribution Guide](http://simp-doc.readthedocs.io/en/stable/contributors_guide/index.html).
 
 ### Acceptance tests
 

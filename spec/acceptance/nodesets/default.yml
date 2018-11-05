@@ -13,7 +13,7 @@ HOSTS:
       - client
     platform: el-6-x86_64
     box: centos/6
-    hypervisor: vagrant
+    hypervisor: <%= hypervisor %>
     yum_repos:
       epel:
         mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch'
@@ -24,7 +24,7 @@ HOSTS:
       - client
     platform: el-7-x86_64
     box: centos/7
-    hypervisor: vagrant
+    hypervisor: <%= hypervisor %>
     yum_repos:
       epel:
         mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch'

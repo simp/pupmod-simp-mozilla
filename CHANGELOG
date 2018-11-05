@@ -1,3 +1,7 @@
+* Mon Oct 29 2018 Liz Nemsick <lnemsick.simp@gmail.com> - 5.1.0-0
+- Update contribution guide URL in README.md
+- Update to onyxpoint OEL boxes in acceptance tests
+
 * Fri Oct 12 2018 Nick Miller <nick.miller@onyxpoint.com> - 5.1.0-0
 - Added $package_ensure parameters to mozilla::firefox and mozilla::thunderbird
   - Changed the package from 'latest' to 'installed'
