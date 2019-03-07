@@ -1,6 +1,6 @@
 {
   "name": "simp-mozilla",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "author": "SIMP Team",
   "summary": "Manage Mozilla products (currently supported: firefox)",
   "license": "Apache-2.0",
@@ -20,7 +20,7 @@
     },
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.13.1 < 5.0.0"
+      "version_requirement": ">= 4.13.1 < 6.0.0"
     }
   ],
   "operatingsystem_support": [
