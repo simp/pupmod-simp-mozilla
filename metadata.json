@@ -1,6 +1,6 @@
 {
   "name": "simp-mozilla",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "author": "SIMP Team",
   "summary": "Manage Mozilla products (currently supported: firefox)",
   "license": "Apache-2.0",
