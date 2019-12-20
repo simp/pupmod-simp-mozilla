@@ -36,6 +36,8 @@ This module is optimally designed for use within a larger SIMP ecosystem, but it
 
 This module will only install Mozilla Firefox and Mozilla Thunderbird, depending on the class included.
 
+See [REFERENCE.md](./REFERENCE.md) for API details.
+
 ## Setup
 
 ### What mozilla affects
