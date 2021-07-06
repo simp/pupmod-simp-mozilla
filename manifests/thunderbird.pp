@@ -2,14 +2,18 @@
 #
 # @param package_ensure The ensure status of the thunderbird package
 #
+# @param install_options Options to pass the package install.
+#
 # @author https://github.com/simp/pupmod-simp-mozilla/graphs/contributors
 #
 class mozilla::thunderbird (
   String $package_ensure = simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' }),
+  Optional[String]    $install_options = undef
 ) {
   include 'mozilla'
 
   package { 'thunderbird':
-    ensure => $package_ensure
+    ensure          => $package_ensure,
+    install_options => $install_options
   }
 }

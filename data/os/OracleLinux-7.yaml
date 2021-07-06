@@ -1,0 +1,2 @@
+---
+mozilla::thunderbird::install_options: '--enablerepo=ol7_optional_latest'

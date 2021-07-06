@@ -10,6 +10,7 @@ describe 'mozilla::thunderbird' do
   }
 
   context 'with defaults' do
+
     it 'should work with no errors' do
       apply_manifest(manifest, :catch_failures => true)
     end

@@ -1,3 +1,9 @@
+* Tue Jul 06 2021 Jeanne Greulich <jeanne.greulich@onyxpoint.com> - 5.3.0
+- Add install_options param to mozilla::thunderbird for the package install.
+  The install_options are undef except for OEL7 where they enable the repo,
+  ol7_optional_latest, which contains the thunderbird rpm.
+- Also updated test nodesets to the latest configuration.
+
 * Tue Jun 15 2021 Chris Tessmer <chris.tessmer@onyxpoint.com> - 5.3.0
 - Removed support for Puppet 5
 - Ensured support for Puppet 7 in requirements and stdlib
