@@ -1,3 +1,6 @@
+* Mon Jul 17 2023 Chris Tessmer <chris.tessmer@onyxpoint.com> - 5.4.0
+- Add RockyLinux 8 support
+
 * Tue Jul 06 2021 Jeanne Greulich <jeanne.greulich@onyxpoint.com> - 5.3.0
 - Add install_options param to mozilla::thunderbird for the package install.
   The install_options are undef except for OEL7 where they enable the repo,
