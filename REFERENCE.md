@@ -7,8 +7,8 @@
 ### Classes
 
 * [`mozilla`](#mozilla)
-* [`mozilla::firefox`](#mozillafirefox): A class to install mozilla firefox
-* [`mozilla::thunderbird`](#mozillathunderbird): Install mozilla thunderbird
+* [`mozilla::firefox`](#mozilla--firefox): A class to install mozilla firefox
+* [`mozilla::thunderbird`](#mozilla--thunderbird): Install mozilla thunderbird
 
 ## Classes
 
@@ -16,7 +16,7 @@
 
 The mozilla class.
 
-### <a name="mozillafirefox"></a>`mozilla::firefox`
+### <a name="mozilla--firefox"></a>`mozilla::firefox`
 
 A class to install mozilla firefox
 
@@ -24,9 +24,9 @@ A class to install mozilla firefox
 
 The following parameters are available in the `mozilla::firefox` class:
 
-* [`package_ensure`](#package_ensure)
+* [`package_ensure`](#-mozilla--firefox--package_ensure)
 
-##### <a name="package_ensure"></a>`package_ensure`
+##### <a name="-mozilla--firefox--package_ensure"></a>`package_ensure`
 
 Data type: `String`
 
@@ -34,7 +34,7 @@ The ensure status of the firefox package
 
 Default value: `simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' })`
 
-### <a name="mozillathunderbird"></a>`mozilla::thunderbird`
+### <a name="mozilla--thunderbird"></a>`mozilla::thunderbird`
 
 Install mozilla thunderbird
 
@@ -42,10 +42,10 @@ Install mozilla thunderbird
 
 The following parameters are available in the `mozilla::thunderbird` class:
 
-* [`package_ensure`](#package_ensure)
-* [`install_options`](#install_options)
+* [`package_ensure`](#-mozilla--thunderbird--package_ensure)
+* [`install_options`](#-mozilla--thunderbird--install_options)
 
-##### <a name="package_ensure"></a>`package_ensure`
+##### <a name="-mozilla--thunderbird--package_ensure"></a>`package_ensure`
 
 Data type: `String`
 
@@ -53,11 +53,11 @@ The ensure status of the thunderbird package
 
 Default value: `simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' })`
 
-##### <a name="install_options"></a>`install_options`
+##### <a name="-mozilla--thunderbird--install_options"></a>`install_options`
 
 Data type: `Optional[String]`
 
 Options to pass the package install.
 
-Default value: ``undef``
+Default value: `undef`
 
