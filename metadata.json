@@ -1,6 +1,6 @@
 {
   "name": "simp-mozilla",
-  "version": "5.4.0",
+  "version": "5.5.0",
   "author": "SIMP Team",
   "summary": "Manage Mozilla products (currently supported: firefox)",
   "license": "Apache-2.0",
@@ -47,6 +47,12 @@
     },
     {
       "operatingsystem": "Rocky",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "AlmaLinux",
       "operatingsystemrelease": [
         "8"
       ]
