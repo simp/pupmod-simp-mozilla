@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe 'mozilla::thunderbird' do
   on_supported_os.each do |os, facts|
-
     let(:facts) do
       facts
     end
