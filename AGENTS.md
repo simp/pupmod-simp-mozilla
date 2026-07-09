@@ -7,13 +7,13 @@ This file provides guidance to AI agents when working with code in this reposito
 `simp-mozilla` is a small SIMP Puppet module that installs Mozilla desktop
 products from the OS package repositories. It manages exactly two packages via
 two public classes: `mozilla::firefox` installs `firefox`
-(`manifests/firefox.pp:12-14`) and `mozilla::thunderbird` installs
-`thunderbird` (`manifests/thunderbird.pp:15-18`). There is no service or config
+(`manifests/firefox.pp`) and `mozilla::thunderbird` installs
+`thunderbird` (`manifests/thunderbird.pp`). There is no service or config
 management — the module is a thin, declarative wrapper around `package`
 resources whose ensure state is driven by the SIMP `simp_options::package_ensure`
 seam.
 
-The top-level `mozilla` class (`manifests/init.pp:3-5`) does nothing except call
+The top-level `mozilla` class (`manifests/init.pp`) does nothing except call
 `simplib::assert_metadata($module_name)`; both feature classes `include
 'mozilla'` so that assertion always runs.
 
@@ -22,29 +22,29 @@ The top-level `mozilla` class (`manifests/init.pp:3-5`) does nothing except call
 Three classes, no defines. None of them are `assert_private()`'d — all three are
 part of the public API and are consumed with `include`.
 
-- **`mozilla` (`manifests/init.pp:3-5`)** — Base class. Its entire body is
-  `simplib::assert_metadata($module_name)` (`init.pp:4`), which fails the catalog
+- **`mozilla` (`manifests/init.pp`)** — Base class. Its entire body is
+  `simplib::assert_metadata($module_name)` (`init.pp`), which fails the catalog
   early on an unsupported OS (per `metadata.json` `operatingsystem_support`). No
   parameters, no resources.
-- **`mozilla::firefox` (`manifests/firefox.pp:7-15`)** — Public class. One
+- **`mozilla::firefox` (`manifests/firefox.pp`)** — Public class. One
   parameter `$package_ensure` (`String`) defaulting to
   `simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' })`
-  (`firefox.pp:8`). `include 'mozilla'` (`firefox.pp:10`), then
-  `package { 'firefox': ensure => $package_ensure }` (`firefox.pp:12-14`).
-- **`mozilla::thunderbird` (`manifests/thunderbird.pp:9-19`)** — Public class.
+  (`firefox.pp`). `include 'mozilla'` (`firefox.pp`), then
+  `package { 'firefox': ensure => $package_ensure }` (`firefox.pp`).
+- **`mozilla::thunderbird` (`manifests/thunderbird.pp`)** — Public class.
   Parameters: `$package_ensure` (`String`, same `simp_options::package_ensure`
-  default, `thunderbird.pp:10`) and `$install_options` (`Optional[String]`,
-  default `undef`, `thunderbird.pp:11`). `include 'mozilla'`
-  (`thunderbird.pp:13`), then
+  default, `thunderbird.pp`) and `$install_options` (`Optional[String]`,
+  default `undef`, `thunderbird.pp`). `include 'mozilla'`
+  (`thunderbird.pp`), then
   `package { 'thunderbird': ensure => $package_ensure, install_options => $install_options }`
-  (`thunderbird.pp:15-18`). The `install_options` are passed straight through to
+  (`thunderbird.pp`). The `install_options` are passed straight through to
   the package provider (e.g. extra `yum`/`dnf` flags).
 
 ### Gotchas / non-obvious details
 
 - **`mozilla` (init.pp) is not a "do everything" entry point.** Unlike many SIMP
   modules, `include 'mozilla'` installs nothing — it only runs
-  `simplib::assert_metadata` (`init.pp:4`). To install software you must include
+  `simplib::assert_metadata` (`init.pp`). To install software you must include
   `mozilla::firefox` and/or `mozilla::thunderbird` directly.
 - **The only shipped Hiera data targets an unsupported OS.** The sole data file
   is `data/os/OracleLinux-7.yaml`, which sets
@@ -64,7 +64,7 @@ part of the public API and are consumed with `include`.
   is what makes the classes compile without it.
 - **`assert_metadata` gates the catalog on OS.** Applying any class on an OS
   outside the `metadata.json` matrix fails at compile time via
-  `simplib::assert_metadata` (`init.pp:4`).
+  `simplib::assert_metadata` (`init.pp`).
 - **`puppetlabs/stdlib` is declared but not obviously used** by the manifests
   (no stdlib function calls appear in `manifests/`). It is retained as a standard
   SIMP baseline dependency and as a fixture.
@@ -74,10 +74,10 @@ part of the public API and are consumed with `include`.
 This is the module's only business-logic seam — the ensure state of both
 packages. Both calls resolve `simp_options::package_ensure`:
 
-| Line | Key | `default_value` |
+| File | Key | `default_value` |
 |------|-----|-----------------|
-| `manifests/firefox.pp:8` | `simp_options::package_ensure` | `'installed'` |
-| `manifests/thunderbird.pp:10` | `simp_options::package_ensure` | `'installed'` |
+| `manifests/firefox.pp` | `simp_options::package_ensure` | `'installed'` |
+| `manifests/thunderbird.pp` | `simp_options::package_ensure` | `'installed'` |
 
 Keep routing SIMP feature toggles through
 `simplib::lookup('simp_options::*', { 'default_value' => ... })` with an explicit
