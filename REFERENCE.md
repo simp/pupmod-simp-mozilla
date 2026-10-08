@@ -60,4 +60,3 @@ Data type: `Optional[String]`
 Options to pass the package install.
 
 Default value: `undef`
-
